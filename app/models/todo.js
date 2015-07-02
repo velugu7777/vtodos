@@ -4,4 +4,4 @@ var Todo= DS.Model.extend({
   title:DS.atrr('string'),
   isCompleted:DS.atrr('boolean'),
 });
-export default Todo
+export default Todo;
