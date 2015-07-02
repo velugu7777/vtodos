@@ -1,6 +1,14 @@
-{{input type = "text"}}
 <h1>{{mytodos}}</h1>
-{{#each model as |todo|}}
-<li>{{todo.title}}</li>
-{{/each}}
+
+{{input value = ktodo}}
+
+<button {{action 'newTodo' ktodo}}> New Todo</button>
+
+
+<ul id = todo-list>
+  {{#each model as |todo|}}
+  <li>{{todo.title}}</li>
+  {{/each}}
+</ul>
+
 {{outlet}}

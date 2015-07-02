@@ -1,5 +1,11 @@
 import Ember from 'ember';
 
-export default Ember.Controller.extend({
-  mytodos:'My first example',
+export default Ember.ArrayController.extend({
+ktodo: "",
+ actions:{
+  newTodo:function(kkk){
+    var k = {title: kkk, isCompleted: false};
+    console.log(k);
+  }
+}
 });

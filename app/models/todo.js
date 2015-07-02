@@ -1,6 +1,7 @@
 import DS from 'ember-data';
 
-export default DS.Model.extend({
+var Todo= DS.Model.extend({
   title:DS.atrr('string'),
-  age:DS.atrr('number'),
+  isCompleted:DS.atrr('boolean'),
 });
+export default Todo
