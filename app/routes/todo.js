@@ -5,6 +5,6 @@ export default Ember.Route.extend({
     return [
       {title: "", isCompleted: false},
       {title: "", isCompleted: false}
-   ];//this.store.find("todo");
+   ];
   }
 });
